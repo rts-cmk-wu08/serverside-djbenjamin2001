@@ -20,7 +20,7 @@ const Navigation = ({showDropdown, setShowDropdown}) => {
 <nav className={`
 ${showDropdown ? "flex" : "hidden"}
 
-py-4 flex-col gap-5 items-center absolute left-0     w-full top-full  bg-slate-400/75 
+py-4 flex-col gap-5 items-center absolute    ml-10   w-full top-full bg-white
 md:static md:w-auto
 md:flex-row
 md:flex
@@ -28,9 +28,11 @@ md:bg-transparent
 backdrop-blur-sm
 `}>
 <Link href="/">Home</Link>
-<a href="">Menu</a>
-<Link href="About">About us</Link>
-<Link href="Contact">Contact</Link>
+<a href="">About</a>
+<a href="">Shop</a>
+<Link href="blog">Blog</Link>
+<Link href="contact">Contact</Link>
+<h1 className=" text-xl font-bold">SWANKY</h1>
 </nav>
 </>
       

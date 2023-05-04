@@ -1,10 +1,11 @@
-
-
+"use client"
+import Navigation from "./Navigation";
+import useShowDropdown from "@/hooks/useDropdown";
 const Header = () => {
-   
+    const {ref,showDropdown, setShowDropdown} = useShowDropdown()
     return ( 
-        <header>
-        hello hello 
+        <header className="bg-white" ref={ref}>
+    <Navigation showDropdown={showDropdown} setShowDropdown={setShowDropdown}></Navigation>
         </header>
      );
 }
